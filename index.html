@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k.k. | Web Designer</title>
+    
+    <!-- CSS Styling -->
+    <style>
+        /* Base Variables for our Dark Canvas Theme */
+        :root {
+            --bg-color: #121212;      /* Deep dark background */
+            --text-color: #ffffff;    /* White text for contrast */
+            --accent-color: #e59400;  /* Gold/orange to match your logo */
+            --card-bg: #1e1e1e;       /* Slightly lighter dark color for project cards */
+        }
+
+        /* Basic Setup */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        /* Header & Navigation */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #0a0a0a;
+            border-bottom: 1px solid #333;
+        }
+
+        /* Logo Styling */
+        .logo-container img {
+            width: 150px; /* Made wider to fit the text */
+            height: auto; /* Keeps the original proportions */
+            object-fit: contain;
+        }
+
+        /* Hero / Introduction Section */
+        .hero {
+            text-align: center;
+            padding: 120px 20px;
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero span {
+            color: var(--accent-color);
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #b3b3b3;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .projects-section h2 {
+            font-size: 2rem;
+            margin-bottom: 40px;
+        }
+
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        /* Project Cards */
+        .card {
+            background-color: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            width: 320px;
+            border: 1px solid #333;
+            transition: transform 0.3s ease, border-color 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px); /* Moves the card up slightly on hover */
+            border-color: var(--accent-color);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+        }
+
+        .card a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 25px;
+            background-color: var(--accent-color);
+            color: #000;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .card a:hover {
+            background-color: #cc8400; /* Slightly darker gold on hover */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #0a0a0a;
+            margin-top: 50px;
+            border-top: 1px solid #333;
+        }
+
+        footer a {
+            color: var(--accent-color);
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <!-- Loading your specific logo file -->
+            <img src="1000570048.png" alt="K.K. Website Development Logo">
+        </div>
+        <div>
+            <!-- You can add navigation links here in the future -->
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="hero">
+            <h1>Hi, I am <span>k.k.</span></h1>
+            <p>Creative Web Designer building beautiful digital experiences.</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="projects-section">
+            <h2>My Recent Work</h2>
+            <div class="project-grid">
+                
+                <!-- Project 1 -->
+                <div class="card">
+                    <h3>Workspace 2.0</h3>
+                    <p>A web design project showcasing my custom workspace interface.</p>
+                    <a href="https://kandarpprajapati567-alt.github.io/My-workspace-2.0/" target="_blank">View Project</a>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+                    <h3>Private Project Three</h3>
+                    <p>A specialized web application hosted on Vercel.</p>
+                    <a href="https://privet-project-three.vercel.app/" target="_blank">View Project</a>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>Let's connect on <a href="https://www.instagram.com/grow_with_k.k__8140?igsh=MXFvbmUxa3NoZzd6ZQ==" target="_blank">Instagram</a></p>
+    </footer>
+
+</body>
+</html>
